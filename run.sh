@@ -3,6 +3,9 @@
 # Exit on error
 set -e
 
+# Change to the directory of the script
+cd "$(dirname "$0")"
+
 # Create virtual environment if it doesn't exist
 if [ ! -d "venv" ]; then
     echo "Creating virtual environment..."
